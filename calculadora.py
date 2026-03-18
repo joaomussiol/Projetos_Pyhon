@@ -11,11 +11,11 @@ elif operador == "-" :
     print("Resultado é:",resultado)
 
 elif operador == "/" :
-    if num2 == 0 :
-        print("ERRO: Divisão por zero")
-    else:
+    try:
         resultado = num1 / num2
         print("Resultado é:",resultado)
+    except Exception as e:
+        print(e)
 
 elif operador == "*" :
     resultado = num1 * num2
