@@ -1,16 +1,21 @@
-print("agora faremos o seu cadastro")
-username = input("diga seu nome de usuario: ")
-user_password = int(input("digite sua senha de usuario: "))
+print("=== cadastro ===")
+username = input("Digite seu nome de usuário: ")
+user_password = (input("digite sua senha de usuario:"))
+
 max_trys = 3
 
-print("agora iremos fazer login")
+print("\n=== Login ===")
 
 for tentativas in range(1, max_trys +1 ):
-    username_digitado = input
-    senha_digitada = int(input("digite sua senha:"))
+    username_digitado = input("Digite seu usuário: ")
+    senha_digitada = (input("Digite sua senha:"))
 
-    if senha_digitada == user_password:
-        print("acertou")
+    if username_digitado == username and senha_digitada == user_password:
+        print("Login realizado com sucesso")
         break
+
     else:
-        print("errou")
+        print(f"Erro! Tentativa {tentativas} de {max_trys}")
+
+else:
+    print("Limite de tentativas excedidas, Acesso Negado")
