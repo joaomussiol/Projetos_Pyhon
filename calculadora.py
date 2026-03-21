@@ -23,7 +23,7 @@ while True:
         print("Operador invalido")
 
     if resultado is not None:
-        print(f"{num1} {operador} {num2} = {resultado}")
+        print(f"{num1} {operador} {num2} = {round(resultado, 3)}")
 
     continuar = input("Deseja continuar? (S/N): ").lower().strip()
 
